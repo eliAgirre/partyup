@@ -1,0 +1,116 @@
+/*****************************************************************************************/
+/*                             Selector TIPO                                             */
+/*****************************************************************************************/
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a { color: #00B7FF; }
+
+footer { 
+	width: 100%;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: block;
+}
+footer div{ display: block; }
+
+/*****************************************************************************************/
+/*                              Selector CLASES                                          */
+/*****************************************************************************************/
+
+.contenedor { margin-top: 30px; }
+
+/*****************************************************************************************/
+/*                              Selector ID                                              */
+/*****************************************************************************************/
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url('/img/partyUp.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.2;
+    filter:alpha(opacity=80);
+}
+
+#searchForm { margin-left: 5%; }
+
+#searchForm input[type="text"] {
+
+	outline: none;
+    background: url(../img/search.png) no-repeat 10px 6px #f2efef;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #f2efef;
+    opacity: 0.9;
+    font-size: 13px;
+    color: #f2efef;
+    width: 400px;
+    padding: 6px 15px 6px 35px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+
+#searchForm input[type="text"]:focus { width: 425px; }
+
+
+#login {
+	color: #fff;
+	background-color: #339933;
+	border-color: #4cae4c;
+	border-radius: 8px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 15px;
+}
+
+#login:hover { background-color: #40bf40; }
+
+#alerta{ margin-left: 25%; }
+
+
+/*****************************************************************************************/
+/*                              RESPONSIVE                                               */
+/*****************************************************************************************/
+
+@media only screen and (max-width: 768px) {
+	footer{ display: none; }
+	footer div{ display: none; }
+    #login {
+		width: 69px;
+		margin-left: 5px;
+	}
+	#searchForm { 
+		margin-left: 0%;
+		width: 100%;
+    	padding-left: 0px; 
+	}
+	#searchForm input[type="text"] { width: 200px; }
+	#searchForm input[type="text"]:focus { width: 225px; }
+}
+
+@media only screen and (max-width: 991px) {
+	footer{ display: none; }
+	footer div{ display: none; }
+	#searchForm { 
+		margin-left: 0%;
+    	padding-left: 0px; 
+	}
+	#searchForm input[type="text"] { width: 225px; }
+	#searchForm input[type="text"]:focus { width: 250px; }
+}
