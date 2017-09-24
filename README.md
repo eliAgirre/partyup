@@ -1,6 +1,8 @@
+## partyUp
 
+The OpenShift `nodejs` cartridge documentation can be found at:
 
-# partyup
+http://openshift.github.io/documentation/oo_cartridge_guide.html#nodejs
 
 ### Tools
 
@@ -18,3 +20,5 @@ Validations bootstrap checkbox: http://formvalidation.io/examples/awesome-bootst
 Passport-facebook: https://github.com/jaredhanson/passport-facebook
 
 Passport-google: https://github.com/jaredhanson/passport-google-oauth
+
+Facebook developers: https://developers.facebook.com/

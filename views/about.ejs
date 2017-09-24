@@ -4,7 +4,12 @@
   </head>
   <body>
   	<div id="wrapper">
-	  	<% include navbar %>
+	  	  <% if (sessionID) { %>
+			  <% include navbarLogged %>
+		  <% } %>
+		  <% if (sessionID=='') { %>
+			  <% include navbar %>
+		  <% } %>
 	  	<div id="background"></div>
 		<div class="container col-sm-12 col-md-12 contenedor">
 		    	

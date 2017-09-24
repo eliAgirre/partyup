@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <% include header %>
+  </head>
+  <body>
+  	<div id="wrapper">  	  
+		  <% if (sessionID) { %>
+			  <% include navbarLogged %>
+		  <% } %>
+		  <% if (sessionID=='') { %>
+			  <% include navbar %>
+		  <% } %>
+	  	<div id="background"></div>
+		<div class="container col-sm-12 col-md-12 contenedor">
+		
+			<div class="row" style="text-align:center;">
+				
+			</div>
+		    	
+		    <% include footer %>
+		</div><!-- container -->  
+	</div><!-- wrapper -->
+    <% include scriptBootstrap %>  
+  </body>
+</html>

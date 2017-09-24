@@ -26,6 +26,12 @@ footer div{ display: block; }
 
 .contenedor { margin-top: 30px; }
 
+.glyphicons-user { background: url(../img/glyphicons/glyphicons-4-user.png) no-repeat; padding-left:15px; }
+.glyphicons-envelope { background: url(../img/glyphicons/glyphicons-11-envelope.png) no-repeat; padding-left:15px;}
+.glyphicons-lock { background: url(../img/glyphicons/glyphicons-204-lock.png) no-repeat; padding-left:15px; }
+.glyphicons-calendar { background: url(../img/glyphicons/glyphicons-46-calendar.png) no-repeat; padding-left:15px; }
+
+
 /*****************************************************************************************/
 /*                              Selector ID                                              */
 /*****************************************************************************************/

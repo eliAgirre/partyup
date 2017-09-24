@@ -31,7 +31,7 @@ require('./config/passport')(passport); //le pasamos passport a passport.js (est
 
 // all environments
 //preparamos nuestra aplicación express
-app.set('port', process.env.PORT || 3000);
+//app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views'); //indicamos el directorio views para ejs
 app.set('view engine', 'ejs');
 app.use(express.favicon());
@@ -60,6 +60,11 @@ require('./routes/index.js')(app, passport); //para la gestión de rutas, le pas
 //app.get('/users', user.list);
 
 // server
-http.createServer(app).listen(app.get('port'), function(){
+/*http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
-});
+});*/
+
+//Servidor Cloud9/OpenShift/local
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080 || 3000, ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+app.listen(port, ip);
+console.log('The magic happens on port ' + port);

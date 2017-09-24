@@ -15,7 +15,7 @@ var userSchema= mongoose.Schema({
 
 	//El id, email, username, password y birthday se guardarán en el modelo antes de introducir a la base de datos
 	local:{
-		_id: String ,
+		id: String,
 		email:  String,
 	    username:  String,
 	    password:  String,
@@ -24,9 +24,17 @@ var userSchema= mongoose.Schema({
 	fb: {
 		//_id: String ,  // id mongodb
 		id: String,    // id facebook
-		firstName: String,
-		lastName: String,
 		email: String,
+		username:  String,
+		firstNameFacebook: String,
+		lastNameFacebook: String,
+		birthday:  String
+	},
+	google: {
+	    id: String,
+	    email: String,
+	    username:  String,
+		nameGoogle: String,
 		birthday:  String
 	}
 

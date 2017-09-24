@@ -3,13 +3,20 @@
   <% include header %>
   </head>
   <body>
-  	<div id="wrapper">
-	  	<% include navbar %>
-	  	<div id="background"></div>
+  	<div id="wrapper">  	  
+		  <% if (sessionID) { %>
+			  <% include navbarLogged %>
+		  <% } %>
+		  <% if (sessionID=='') { %>
+			  <% include navbar %>
+		  <% } %>
+	  	<div></div>
 		<div class="container col-sm-12 col-md-12 contenedor">
 		
 			<div class="row" style="text-align:center;">
-				<h3><strong><%=title %></strong></h3>
+				<h3><strong><%=subtitle %><%=user.local.username %><%=user.fb.firstNameFacebook %><%=user.google.nameGoogle %></strong></h3>
+				<div id="user">
+				</div>
 			</div>
 		    	
 		    <% include footer %>
